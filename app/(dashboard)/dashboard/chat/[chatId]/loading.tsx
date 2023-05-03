@@ -3,7 +3,7 @@ import Skeleton from "react-loading-skeleton";
 
 interface loadingProps {}
 
-const loading: FC<loadingProps> = ({}) => {
+const Loading: FC<loadingProps> = ({}) => {
   return (
     <div className="flex flex-col h-full items-center">
       <Skeleton className="mb-4" height={40} width={400} />
@@ -72,16 +72,8 @@ const loading: FC<loadingProps> = ({}) => {
           </div>
         </div>
       </div>
-
-      {/* chat input */}
-
-      {/* <ChatInput
-        chatPartner={chatPartner}
-        img={session.user.image}
-        chatId={chatId}
-      /> */}
     </div>
   );
 };
 
-export default loading;
+export default Loading;

@@ -8,7 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-const page = async ({}) => {
+const Page = async ({}) => {
   const session = await getServerSession(authOptions);
   if (!session) notFound();
 
@@ -85,4 +85,4 @@ const page = async ({}) => {
   );
 };
 
-export default page;
+export default Page;
