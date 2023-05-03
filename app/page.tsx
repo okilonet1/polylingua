@@ -1,8 +1,8 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
+"use client";
 
-const inter = Inter({ subsets: ["latin"] });
+import Button from "@/components/Button";
+import { signOut } from "next-auth/react";
 
 export default function Home() {
-  return <div></div>;
+  return <button onClick={() => signOut()}>Sign out</button>;
 }
